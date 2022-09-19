@@ -17,7 +17,7 @@ void game_rules()
 {
     system("cls");
     printf("            RULES OF THIS GAME\n");
-    printf("\n1. You can move only 1 step at a time by arrow key\n");
+    printf("1. You can move only 1 step at a time by arrow key\n");
     printf("Move Up : by Up arrow key\nMove down : by Down arrow key\nMove Left : by Left arrow key\nMove Right : by Right arrow key\n");
     printf("2. You can move number at empty position only\n");
     printf("\nFor each valid move : your toral number of move will be decreased by 1\n");
@@ -163,15 +163,6 @@ void create_array(int arr[][4])
             }                                     // and finally lastIndex--
         }
     arr[i - 1][j - 1]=0; // last number is zero
-    for(i=0;i<4;i++)
-    {
-        for(j=0;j<4;j++)
-        {
-            printf("%d ",arr[i][j]);
-        }
-        printf("\n");
-    }
-    getch();
 }
 int main()
 {
